@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beyond the Label — U.S. Food Quality vs. the World</title>
+  <meta name="description" content="Interactive zine comparing U.S. food quality and regulations across grains, dairy, and produce." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <span>Beyond the Label</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#grains">Grains</a>
+      <a href="#dairy">Dairy</a>
+      <a href="#produce">Produce</a>
+      <a href="#health">Health</a>
+      <a href="#sources">Sources</a>
+    </nav>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#grains">Grains</a>
+    <a href="#dairy">Dairy</a>
+    <a href="#produce">Produce</a>
+    <a href="#health">Public Health</a>
+    <a href="#sources">Sources</a>
+  </div>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="section hero">
+      <div class="heroGrid">
+        <div class="heroText">
+          <h1>Food quality in the U.S. looks normal — until you compare it.</h1>
+          <p class="lead">
+            This digital zine compares how major food groups are processed, labeled, and regulated in the United States
+            versus other countries. The goal: show how standards shape what ends up on our plates.
+          </p>
+
+          <div class="thesis">
+            <h2>Thesis</h2>
+            <p>
+              Food quality in the United States is lower than many other countries when evaluated across major food groups.
+              Differences appear in processing levels and nutritional standards in foods such as grains, dairy, and produce.
+              These disparities matter because food quality directly affects public health and long-term dietary outcomes.
+            </p>
+          </div>
+
+          <div class="meta">
+            <span><strong>Creators:</strong> Sahaana Sridhar, Emma De La Torre, Zitlali Cruz, Jack McMahon</span>
+            <span class="pill">Interactive Zine</span>
+            <span class="pill">GitHub Pages</span>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn" href="#grains">Start with Grains ↓</a>
+            <a class="btn ghost" href="#sources">View Sources</a>
+          </div>
+        </div>
+
+        <div class="heroCard">
+          <h3>Graphic Slot: “U.S. vs World” Snapshot</h3>
+          <p class="small">
+            Add a collage, map, or scorecard here.
+            Tonight option: make a simple Canva graphic and export as PNG.
+          </p>
+          <div class="placeholder">
+            <span>Drop image here → /images/hero.png</span>
+          </div>
+
+          <div class="quickFacts">
+            <h4>Quick facts (fill in)</h4>
+            <ul>
+              <li>Fact #1 about ultra-processed foods</li>
+              <li>Fact #2 about labeling/regulations</li>
+              <li>Fact #3 about health outcomes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GRAINS -->
+    <section id="grains" class="section">
+      <div class="sectionHead">
+        <h2>Grains</h2>
+        <p class="subtitle">Whole vs refined — and how processing changes what “bread” means.</p>
+      </div>
+
+      <div class="contentGrid">
+        <article class="card">
+          <h3>What’s common in the U.S.</h3>
+          <p>
+            Write 1–2 paragraphs describing the typical U.S. grain landscape: refined flour, ultra-processed cereals,
+            long ingredient lists, added sugars, and “enriched” products.
+          </p>
+
+          <div class="callout">
+            <strong>Visual idea:</strong> Ingredient-list length comparison (U.S. bread vs. EU bread)
+          </div>
+
+          <div class="placeholder">
+            <span>Graphic slot → /images/grains-ingredients.png</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Regulation + standards comparison</h3>
+          <p>
+            Compare the U.S. to one or two places (EU / Canada / Japan).
+            Focus on labeling rules, additive restrictions, and what qualifies as “whole grain.”
+          </p>
+
+          <div class="miniGrid">
+            <div class="mini">
+              <h4>U.S.</h4>
+              <ul>
+                <li>Standard/labeling note</li>
+                <li>Additive note</li>
+                <li>Whole grain note</li>
+              </ul>
+            </div>
+            <div class="mini">
+              <h4>Comparison Country</h4>
+              <ul>
+                <li>Standard/labeling note</li>
+                <li>Additive note</li>
+                <li>Whole grain note</li>
+              </ul>
+            </div>
+          </div>
+
+          <details class="didYouKnow">
+            <summary>Did you know?</summary>
+            <p>
+              Add a surprising but sourced fact here (1–2 sentences).
+            </p>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>Interactive: “Decode the ingredient list”</h3>
+          <p class="small">
+            Hover the highlighted terms to show quick explanations.
+          </p>
+
+          <div class="labelBox">
+            <p class="labelTitle">Example ingredient list (replace with a real one)</p>
+            <p class="labelText">
+              Enriched wheat flour, water, sugar, <span class="tip" data-tip="Often used to condition dough; classification can vary by region.">mono- and diglycerides</span>,
+              <span class="tip" data-tip="A preservative; regulations differ by country.">calcium propionate</span>,
+              yeast, salt, <span class="tip" data-tip="An emulsifier; used to improve texture.">DATEM</span>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: DAIRY -->
+    <section id="dairy" class="section alt">
+      <div class="sectionHead">
+        <h2>Dairy</h2>
+        <p class="subtitle">Hormones, fortification, processing, and how standards affect what “milk” includes.</p>
+      </div>
+
+      <div class="contentGrid">
+        <article class="card">
+          <h3>What’s common in the U.S.</h3>
+          <p>
+            Write 1–2 paragraphs: milk processing, flavored dairy sugar content, fortification norms, labeling clarity.
+          </p>
+
+          <div class="placeholder">
+            <span>Graphic slot → /images/dairy-labels.png</span>
+          </div>
+
+          <details class="didYouKnow">
+            <summary>Did you know?</summary>
+            <p>Add a sourced comparison (ex: what’s allowed vs. restricted).</p>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>Compare nutrition labels</h3>
+          <p class="small">Tonight option: screenshot/replicate nutrition labels as a simple graphic.</p>
+
+          <div class="compare">
+            <div class="compareCol">
+              <h4>U.S. Example</h4>
+              <ul>
+                <li>Calories: ___</li>
+                <li>Sugar: ___g</li>
+                <li>Protein: ___g</li>
+                <li>Additives: ___</li>
+              </ul>
+            </div>
+            <div class="compareCol">
+              <h4>Other Country Example</h4>
+              <ul>
+                <li>Calories: ___</li>
+                <li>Sugar: ___g</li>
+                <li>Protein: ___g</li>
+                <li>Additives: ___</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Why it matters</h3>
+          <p>
+            Connect standards to consumer health outcomes: added sugar in flavored dairy, dietary patterns,
+            and access/marketing.
+          </p>
+
+          <div class="callout">
+            <strong>Visual idea:</strong> “Sugar cubes” comparison (U.S. flavored milk vs. plain milk / other country)
+          </div>
+
+          <div class="placeholder">
+            <span>Graphic slot → /images/dairy-sugar.png</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: PRODUCE -->
+    <section id="produce" class="section">
+      <div class="sectionHead">
+        <h2>Produce</h2>
+        <p class="subtitle">Fresh, shelf-stable, imported, treated — and what regulations allow.</p>
+      </div>
+
+      <div class="contentGrid">
+        <article class="card">
+          <h3>What’s common in the U.S.</h3>
+          <p>
+            Discuss U.S. produce systems: pesticides, imports, shelf-life priorities, and how “fresh” can be managed.
+          </p>
+
+          <div class="placeholder">
+            <span>Graphic slot → /images/produce-map.png</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Standards comparison</h3>
+          <p>
+            Compare pesticide rules or banned substances lists (U.S. vs EU is common). Keep it factual and cite sources.
+          </p>
+
+          <div class="miniGrid">
+            <div class="mini">
+              <h4>Allowed (U.S.)</h4>
+              <ul>
+                <li>Example substance A</li>
+                <li>Example substance B</li>
+                <li>Example rule</li>
+              </ul>
+            </div>
+            <div class="mini">
+              <h4>Restricted/Banned (Elsewhere)</h4>
+              <ul>
+                <li>Example substance A</li>
+                <li>Example substance B</li>
+                <li>Example rule</li>
+              </ul>
+            </div>
+          </div>
+
+          <details class="didYouKnow">
+            <summary>Did you know?</summary>
+            <p>Add 1–2 sentences on how regulation changes what’s sold.</p>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>Fresh vs processed produce</h3>
+          <p>
+            Quick comparison: apple vs applesauce, fresh corn vs canned, etc. Focus on fiber/sugar and additives.
+          </p>
+
+          <div class="placeholder">
+            <span>Graphic slot → /images/produce-fresh-vs-processed.png</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLIC HEALTH -->
+    <section id="health" class="section alt">
+      <div class="sectionHead">
+        <h2>Public Health + Long-Term Outcomes</h2>
+        <p class="subtitle">Processing and standards aren’t abstract — they shape real dietary patterns over time.</p>
+      </div>
+
+      <div class="contentGrid">
+        <article class="card">
+          <h3>Diet quality trends</h3>
+          <p>
+            Summarize what your diet-quality source shows (Wang et al.). Add 2–3 bullet findings you can support.
+          </p>
+          <div class="placeholder">
+            <span>Graphic slot → /images/health-trend.png</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Youth nutrition understanding</h3>
+          <p>
+            Use Boyar et al. to connect processing knowledge to choices. Add one short takeaway and why it matters.
+          </p>
+          <div class="callout">
+            <strong>Zine-style pull quote:</strong> Add a short quote or paraphrase with citation.
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>So what?</h3>
+          <p>
+            Conclude with a clear final message: what should readers notice, question, or look for on labels?
+          </p>
+
+          <details class="didYouKnow">
+            <summary>Actionable takeaway</summary>
+            <ul>
+              <li>Tip: compare ingredient length</li>
+              <li>Tip: look for whole foods first</li>
+              <li>Tip: check added sugars</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section id="sources" class="section">
+      <div class="sectionHead">
+        <h2>Sources</h2>
+        <p class="subtitle">Citations used for claims, definitions, and comparisons.</p>
+      </div>
+
+      <div class="card">
+        <h3>Works Cited (fill + add more)</h3>
+        <ol class="sourcesList">
+          <li>
+            Boyar, Liza, et al. “Can Kids Identify Unprocessed Fruit as Healthier than an Ultra-Processed Sugar-Sweetened Beverage?
+            Functional versus Self-Reported Nutrition Knowledge and Dietary Intake among Youth from Six Countries: Findings from the International Food Policy Study.”
+            <em>BMC Nutrition</em>, vol. 11, no. 1, 2025. DOI: 10.1186/s40795-025-01109-y.
+          </li>
+          <li>
+            Wang, Dong D., et al. “Trends in Dietary Quality Among Adults in the United States, 1999 Through 2010.”
+            <em>JAMA Internal Medicine</em>, vol. 174, no. 10, 2014.
+          </li>
+          <li>Add your regulation sources here (FDA, EFSA/EU, Canada, etc.).</li>
+        </ol>
+
+        <p class="small">
+          Tip: Anytime you make a factual claim (“X is banned”), add a source line here and link it in the section text.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Beyond the Label — Interactive zine on food standards and quality.</p>
+    </footer>
+
+    <!-- Tooltip bubble -->
+    <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
