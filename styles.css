@@ -242,7 +242,7 @@ a:hover{ opacity: 0.92; }
   margin: 0 0 10px;
   color: var(--mid);
   line-height: 1.65;
-  max-width: 72ch;
+  max-width: 100%;
 }
 
 .card ul{
