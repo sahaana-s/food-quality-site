@@ -45,7 +45,7 @@
     <section id="home" class="section hero">
       <div class="heroGrid">
         <div class="heroText">
-          <h1>Food quality in the U.S. looks normal — until you compare it.</h1>
+          <h1>What's really on our plate?</h1>
           <p class="lead">
             This interactive zine compares how major food groups are processed, labeled, and regulated in the United States
             versus other countries. The goal: show how standards shape what ends up on our plates.
@@ -116,22 +116,96 @@
           </div>
         </article>
 
-        <article class="card">
-          <p class="kicker">Graphic Idea</p>
-          <p class="lede">Timeline of U.S. dietary shifts (whole-food era → processed boom → ultra-processed majority).</p>
-
-          <!-- Replace with: <img src="images/timeline.png" class="graphic" alt="Diet timeline"> -->
-          <div class="placeholder">
-            <span>Drop image here → images/timeline.png</span>
+        <section class="section alt">
+          <div class="sectionHead">
+            <h2>How the American Diet Changed</h2>
           </div>
 
-          <details class="didYouKnow">
-            <summary>Optional interactive</summary>
-            <p>
-              Add clickable decade markers: 1950s convenience foods, 1980s processed boom, 2010s ultra-processed majority.
-            </p>
-          </details>
-        </article>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-period">1900–1950</div>
+              <div class="timeline-title">Whole-Food Era</div>
+              <ul>
+                <li>Mostly home-cooked meals</li>
+                <li>Minimal industrial processing</li>
+                <li>Higher fiber intake</li>
+                <li>Low added sugar consumption</li>
+              </ul>
+              <div class="timeline-trend">⬆ Overall diet quality relatively stable</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">1950s–1970s</div>
+              <div class="timeline-title">Convenience Food Expansion</div>
+              <ul>
+                <li>Rise of frozen dinners & packaged foods</li>
+                <li>Refined grains increase</li>
+                <li>Vegetable oils replace animal fats</li>
+                <li>Fast food chains expand</li>
+              </ul>
+              <div class="timeline-trend">⬇ Gradual decline in dietary quality</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">1980s–1990s</div>
+              <div class="timeline-title">Processed Food Boom</div>
+              <ul>
+                <li>“Low-fat” but high-sugar products</li>
+                <li>High-fructose corn syrup becomes widespread</li>
+                <li>Portion sizes increase</li>
+                <li>Calorie intake rises significantly</li>
+              </ul>
+              <div class="timeline-trend">
+                ⬇ Sharp decline in overall diet quality<br>
+                ⬆ Obesity rates accelerate
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2000–2010</div>
+              <div class="timeline-title">Nutritional Adjustments</div>
+              <ul>
+                <li>Trans fats reduced</li>
+                <li>Whole grain awareness grows</li>
+                <li>Nutrition labeling improves</li>
+                <li>School lunch reforms</li>
+              </ul>
+              <div class="timeline-trend">
+                ⬆ Slight improvement in some nutrients<br>
+                ⚠ Ultra-processed foods exceed 50% of calories
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-period">2010–Present</div>
+              <div class="timeline-title">Ultra-Processed Majority</div>
+              <ul>
+                <li>~55–60% of adult calories ultra-processed</li>
+                <li>Higher percentages among children</li>
+                <li>Increased sodium & added sugar intake</li>
+                <li>Growing interest in plant-based diets</li>
+              </ul>
+              <div class="timeline-trend">
+                ⬇ Overall quality still below guidelines<br>
+                ⬆ Chronic disease burden remains high
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pull Quote Example -->
+          <div class="pullquote-large">
+            “Overall dietary quality remains poor, indicating room for improvement and presenting challenges for both public health researchers and policy makers.”
+            <br>— Wang et al., 2014
+          </div>
+
+          <div class="pullquote-large">
+            “Education campaigns should ensure that young people have basic knowledge about the relative dietary quality of commonly consumed foods, particularly in the US.”
+            <br>— Boyar et al., 2025
+          </div>
+
+        </section>
       </div>
     </section>
 
@@ -157,7 +231,7 @@
             </ul>
           </div>
 
-          <details class="didYouKnow">
+          <details class="didYouKnow counter">
             <summary>Counterargument</summary>
             <p>
               Autoimmune diseases such as <strong>celiac disease</strong> cannot be explained by food practices in any country because it is a genetic disorder.
@@ -166,12 +240,9 @@
             </p>
           </details>
 
-          <!-- Replace placeholder with an image when ready -->
-          <div class="callout">
-            <strong>Graphic idea:</strong> “U.S. bread vs Italian bread” ingredient list comparison (length + additives).
-          </div>
-          <div class="placeholder">
-            <span>Drop image here → images/grains-ingredients.png</span>
+          <div class="imageRow">
+            <img src="images/europebread.png" alt="U.S. Bread Ingredient List">
+            <img src="images/usbread.png" alt="EU Bread Ingredient List">
           </div>
         </article>
 
@@ -180,25 +251,9 @@
           <p class="kicker">Farming + Soil</p>
           <p class="lede">
             Wheat differences aren’t just about variety — they’re also about how wheat is grown. U.S. wheat production can involve
-            <strong>glyphosate</strong> (a weed killer), and your research notes suggest higher concentrations compared to many European countries.
-            Your notes also highlight soil composition: European soil is described as having higher <strong>sulfur</strong> content, which may reduce
-            <strong>gliadin</strong> (a component of wheat that can be harder to digest), while American soil is described as more depleted.
+            <strong>glyphosate</strong> (a weed killer) have higher concentrations compared to many European countries. European soil is described as having higher <strong>sulfur</strong> content, which may reduce
+            <strong><span class="tip" data-tip="Gliadin is a protein component of gluten found in wheat. It contributes to dough elasticity but can be harder for some people to digest.">gliadin</span></strong> (a component of wheat that can be harder to digest), while American soil is described as more depleted.
           </p>
-
-          <details class="didYouKnow">
-            <summary>Interactive idea: “What’s gliadin?”</summary>
-            <p>
-              Add a short tooltip or pop-up definition: Gliadin is a protein component of gluten that can be harder for some people to digest.
-              (If you keep this claim, add a source in your Works Cited.)
-            </p>
-          </details>
-
-          <div class="callout">
-            <strong>Graphic idea:</strong> soil → wheat → digestion diagram (label as “proposed mechanism” and cite sources).
-          </div>
-          <div class="placeholder">
-            <span>Drop image here → images/grains-soil-diagram.png</span>
-          </div>
         </article>
 
         <!-- CARD 3: Regulation + enrichment -->
@@ -231,11 +286,43 @@
             </div>
           </div>
 
-          <div class="callout">
-            <strong>Graphic idea:</strong> “Enrichment rules” comparison card (U.S. required vs EU optional/approved list).
-          </div>
-          <div class="placeholder">
-            <span>Drop image here → images/grains-enrichment.png</span>
+          <div class="compareTableWrap">
+            <table class="compareTable" role="table" aria-label="U.S. vs EU grain enrichment and additive approach">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">United States (FDA)</th>
+                  <th scope="col">European Union (EFSA)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Enrichment Status</th>
+                  <td>Mandatory (for “enriched” labels)</td>
+                  <td>Voluntary</td>
+                </tr>
+                <tr>
+                  <th scope="row">Nutrients Added</th>
+                  <td>Iron, Folic Acid, Niacin, Thiamin, Riboflavin</td>
+                  <td>Varies; approved list (Annex I/II)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Goal</th>
+                  <td>Restore lost nutrients + folic acid</td>
+                  <td>“Natural” nutrition / voluntary fortification</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bleaching/Additives</th>
+                  <td>Generally permitted</td>
+                  <td>Mostly banned/restricted</td>
+                </tr>
+                <tr>
+                  <th scope="row">Approach</th>
+                  <td>Risk-based (allowed until proven harmful) </td>
+                  <td>Precautionary principle </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </article>
       </div>
@@ -245,97 +332,140 @@
     <section id="dairy" class="section alt">
       <div class="sectionHead">
         <h2>Dairy</h2>
-        <p class="subtitle">Hormones, fortification, pasteurization — and what standards allow.</p>
+        <p class="subtitle">Hormones, fortification, and processing methods change what “milk” means across countries.</p>
       </div>
 
       <div class="contentGrid">
+        <!-- CARD 1: U.S. dairy practices -->
         <article class="card">
-          <p class="kicker">Dairy • U.S. Practices</p>
+          <p class="kicker">U.S. Dairy Practices</p>
           <p class="lede">
-            Dairy standards differ in what practices are allowed and what consumers can easily learn from labels. In the U.S., practices include
-            rBST (recombinant bovine somatotropin) use, vitamin fortification rules, and HTST pasteurization.
+            In the United States, dairy standards are shaped by FDA-approved production practices, nutrition fortification rules,
+            and pasteurization methods that prioritize safety and shelf-life.
           </p>
 
           <div class="quickhits">
-            <h4>What’s happening in the U.S.</h4>
+            <h4>bST / rBST (Bovine Growth Hormone)</h4>
             <ul>
-              <li><strong>rBST:</strong> FDA-approved to increase milk production; naturally occurring hormone exists in cattle; recombinant version became widespread in the 1980s.</li>
-              <li><strong>Fortification:</strong> required minimums for Vitamins A & D; additional nutrients/flavorings can be added voluntarily under regulations.</li>
-              <li><strong>Pasteurization:</strong> HTST common in U.S. (high temp, short time).</li>
+              <li><strong>bST</strong> (bovine somatotropin) is an animal drug approved by the FDA to increase milk production in dairy cows (FDA).</li>
+              <li>It is related to <strong>somatropin</strong>, a protein hormone naturally produced by cattle that supports normal growth and health maintenance.</li>
+              <li>In the 1980s, a biotechnology version became widespread: <strong>recombinant bST (rBST)</strong> (FDA).</li>
+              <li>The FDA states rBST is safe for cows and for humans consuming dairy from treated cows, but multiple countries (including the EU and Canada) ban it.</li>
+              <li>Your research notes that if cows are not properly cared for, rBST can contribute to health issues like malnourishment and infections (Stafford).</li>
+              <li>Available evidence shows no demonstrated harm for humans from consuming milk from rBST-treated cows.</li>
+            </ul>
+          </div>
+
+          <div class="dairy-split">
+          <div>
+          <img src="images/milk.png" alt="milk" class="graphic">
+          </div>
+          <div>
+          <details class="didYouKnow counter">
+            <summary>Fortification practices (U.S.)</summary>
+            <p>
+              Fortification is the addition of nutrients to foods to maintain or improve overall nutritional quality (FDA).
+              Under U.S. regulations, milk has required minimums for certain nutrients, including <strong>Vitamin A</strong> and
+              <strong>Vitamin D</strong>, and companies may add additional nutrients voluntarily. Flavoring ingredients (fruit/juice)
+              and natural/artificial flavorings may also be added under FDA rules (eCFR).
+            </p>
+            <p>
+              In Europe, Vitamin D fortification is not universally required. Because milk is a major source of Vitamin D in U.S. diets,
+              this may contribute to fewer Vitamin D deficiency cases in the U.S. than in Europe, where populations may get less Vitamin D from milk.
+            </p>
+          </details>
+
+          <details class="didYouKnow counter">
+            <summary>Pasteurization differences (U.S. vs Europe)</summary>
+            <p>
+              Pasteurization is a heat process designed to kill harmful bacteria and prevent spoilage (Cornell CALS). In the U.S., the
+              most common method is <strong>HTST</strong> (high temperature, short time). In Europe, <strong>UHT</strong> (ultra-high temperature)
+              processing is more common. UHT uses a higher temperature for an even shorter time, producing shelf-stable milk that can be stored
+              without refrigeration (Shojai).
+            </p>
+            <p>
+              The FDA notes that pasteurization is important for consumer safety and warns against raw milk due to pathogen risk. Research cited by the FDA
+              indicates pasteurization method differences do not cause significant changes in nutritional value (FDA).
+            </p>
+          </details>
+          </div>
+          </div>
+          </article>
+        </article>
+
+        <!-- CARD 2: International comparison -->
+        <article class="card">
+          <p class="kicker">International Comparison</p>
+          <p class="lede">
+            International dairy policies often prioritize different values, especially around hormone use, animal welfare,
+            and what consumers can learn from labels.
+          </p>
+
+          <div class="quickhits">
+            <h4>Europe: hormone bans + welfare standards</h4>
+            <ul>
+              <li><strong>Hormone policy:</strong> The EU prohibits rBST, while rBST remains in use in the U.S.</li>
+              <li><strong>Why banned:</strong> concerns about higher rates of udder infections in cows → increased antibiotic use (Nutri).</li>
+              <li><strong>Human concerns:</strong> public concerns that hormone residues could have biological effects (from hormone regulation to cancer risk) (Consumer Law).</li>
+              <li><strong>Animal welfare:</strong> EU laws include formal welfare provisions; Directive 98/58/EC states animals should not be kept in conditions causing suffering (Humane World).</li>
+              <li><strong>U.S. contrast:</strong> no enforceable federal welfare laws; standards vary widely and often rely on industry self-regulation (Crate Free USA).</li>
+            </ul>
+          </div>
+
+          <details class="didYouKnow counter">
+            <summary>Label transparency differences</summary>
+            <p>
+              In Europe, hormones like rBST aren’t allowed, so “hormone-free” claims are less relevant. In the U.S., hormones are allowed,
+              but whether rBST was used does not have to be clearly labeled. Labeling like <strong>“rBST-free”</strong> is voluntary and many producers
+              do not include it (Massachusetts Department of Public Health).
+            </p>
+          </details>
+
+          <div class="imageRow">
+            <img src="cow.png" alt="cow" class="graphic">
+            <img src="milk2.png" alt="milk2" class="graphic">
+          </div>
+
+        </article>
+
+        <!-- CARD 3: Public health impact -->
+        <article class="card">
+          <p class="kicker">Dairy • Public Health Impact</p>
+          <p class="lede">
+            Dairy health outcomes depend not only on nutrients but also on added sugars, product types people consume over time,
+            and what options are most available to consumers.
+          </p>
+
+          <div class="quickhits">
+            <h4>What affects health outcomes?</h4>
+            <ul>
+              <li><strong>Fat content standards:</strong> EU and U.S. milk fat levels are similar, but Europe offers more consumer options than typical U.S. markets (eCFR; European Dairy Association).
+                <br><em>(Note: this point is weaker—use it briefly or replace with a stronger source-backed claim.)</em>
+              </li>
+              <li><strong>Added sugar in flavored milk:</strong> In the U.S., chocolate milk served in schools often contains added sugars (Indiana Government).</li>
+              <li><strong>EU guidance:</strong> European dietary guidelines emphasize reducing added sugars, especially for children (European Commission).</li>
+              <li><strong>Why it matters:</strong> higher added sugar intake is linked to weight gain/obesity risk, tooth decay, and increased risk for type 2 diabetes (Knowledge for Policy).</li>
             </ul>
           </div>
 
           <details class="didYouKnow">
-            <summary>rBST: why it’s debated</summary>
+            <summary>Long-term dairy consumption trends</summary>
             <p>
-              Your research notes: FDA states it is safe for humans and cows, but multiple countries (including EU and Canada) have banned it.
-              The concern is often centered on animal health/welfare (e.g., infections) when care is inadequate, and broader policy differences.
+              In the U.S., fluid milk consumption has declined, but overall dairy consumption has increased because Americans eat more processed dairy
+              products like cheese, butter, and yogurt (Dairy News). In Europe, total dairy consumption has plateaued and in some areas is decreasing,
+              linked to plant-based alternatives and changing eating habits (Open Knowledge).
+            </p>
+            <p>
+              Increased intake of saturated fats is concerning because it can raise harmful cholesterol and contribute to heart disease and obesity.
             </p>
           </details>
 
           <div class="callout">
-            <strong>Graphics needed:</strong> milk carton comparison • “What’s in U.S. milk?” breakdown diagram
+            <strong>Graphics needed:</strong> sugar cube visual comparison (chocolate milk) • long-term dairy trends graph • nutrition label breakdown side-by-side
           </div>
 
-          <!-- Replace with: <img src="images/dairy-milk-carton.png" class="graphic" alt="Milk carton comparison"> -->
           <div class="placeholder">
-            <span>Drop image here → images/dairy-milk-carton.png</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <p class="kicker">Dairy • International Comparison</p>
-          <p class="lede">
-            The EU has prohibited the use of rBST, while rBST remains in use in the United States. Your notes connect EU policy to concerns about
-            animal health (udder infections → antibiotic use) and public concern about residues and health risks.
-          </p>
-
-          <div class="quickhits">
-            <h4>EU vs U.S.</h4>
-            <ul>
-              <li><strong>Hormones:</strong> EU bans rBST; U.S. allows it.</li>
-              <li><strong>Animal welfare:</strong> EU has formal welfare provisions (e.g., Directive 98/58/EC); U.S. standards vary and are often industry-led.</li>
-              <li><strong>Label transparency:</strong> hormone-related labeling in the U.S. can be voluntary (e.g., “rBST-free”).</li>
-            </ul>
-          </div>
-
-          <div class="callout">
-            <strong>Graphics needed:</strong> country comparison grid • icon regulation map • banned vs allowed substances
-          </div>
-
-          <!-- Replace with: <img src="images/dairy-regulation-map.png" class="graphic" alt="Regulation map"> -->
-          <div class="placeholder">
-            <span>Drop image here → images/dairy-regulation-map.png</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <p class="kicker">Dairy • Public Health Impact</p>
-          <p class="lede">
-            Dairy’s health impact isn’t only nutrients — it’s also what gets added and what trends over time. Your notes highlight added sugar in flavored milk
-            (especially in schools), and changes in dairy consumption (less fluid milk, more processed dairy).
-          </p>
-
-          <div class="quickhits">
-            <h4>Health angles to highlight</h4>
-            <ul>
-              <li><strong>Added sugar:</strong> sweetened chocolate milk has been served in many U.S. schools; European guidance emphasizes minimizing added sugars, especially for children.</li>
-              <li><strong>Trends:</strong> U.S. fluid milk down, processed dairy up (cheese/butter/yogurt); EU dairy consumption plateauing/decreasing in some regions with plant-based growth.</li>
-              <li><strong>Concern:</strong> increased saturated fat intake linked to cholesterol and cardiovascular risk (add sources for claims).</li>
-            </ul>
-          </div>
-
-          <div class="pullquote">
-            “In school cafeterias, ‘milk’ can mean a sugar delivery system.”
-          </div>
-
-          <div class="callout">
-            <strong>Graphics needed:</strong> chocolate milk sugar comparison • long-term dairy consumption trends graph
-          </div>
-
-          <!-- Replace with: <img src="images/dairy-chocolate-sugar.png" class="graphic" alt="Chocolate milk sugar comparison"> -->
-          <div class="placeholder">
-            <span>Drop image here → images/dairy-chocolate-sugar.png</span>
+            <span>Drop images here → images/chocolate-milk-sugar-cubes.png • images/dairy-trends-graph.png • images/milk-label-compare.png</span>
           </div>
         </article>
       </div>
@@ -453,10 +583,59 @@
             “Overall dietary quality remains poor… presenting challenges for both public health researchers and policy makers.”
           </div>
 
-          <!-- Replace with: <img src="images/health-diet-quality-trend.png" class="graphic" alt="Diet quality trend graph"> -->
-          <div class="placeholder">
-            <span>Drop image here → images/health-diet-quality-trend.png</span>
-          </div>
+          <section class="section alt">
+            <div class="sectionHead">
+              <h2>How Refined Grains Affect the Body</h2>
+            </div>
+
+            <div class="flowchart">
+
+              <div class="flow-step">Refined Grains (white bread, white rice, pastries)</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Low Fiber + Rapid Digestion</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Quick Glucose Absorption into Bloodstream</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Rapid Blood Sugar Spike</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Large Insulin Release from Pancreas</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Blood Sugar Drops (Sometimes Quickly)</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Increased Hunger + Cravings</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Higher Calorie Intake Over Time</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Weight Gain / Increased Body Fat</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Insulin Resistance Develops</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-step">Chronic High Blood Sugar</div>
+              <div class="flow-arrow">↓</div>
+
+              <div class="flow-outcomes">
+                <h3>Long-Term Outcomes</h3>
+                <ul>
+                  <li>Type 2 Diabetes</li>
+                  <li>Cardiovascular Disease</li>
+                  <li>Fatty Liver Disease</li>
+                  <li>Chronic Inflammation</li>
+                  <li>Metabolic Syndrome</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
         </article>
 
         <article class="card">
