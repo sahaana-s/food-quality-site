@@ -288,6 +288,7 @@ a:hover{ opacity: 0.92; }
   border-radius: 12px;
   padding: 10px;
   background: #f5f8e2;
+  border-left: 6px solid var(--accent);
   border: 1px solid var(--line);
 }
 .didYouKnow summary{
@@ -444,8 +445,9 @@ a:hover{ opacity: 0.92; }
 }
 
 .imageRow img{
-  width: 100%;
-  height: auto;
+  height: 320px;
+  width: auto;
+  object-fit: contain;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(59,63,32,0.10);
 }
@@ -653,9 +655,37 @@ a:hover{ opacity: 0.92; }
   margin-top: 16px;
 }
 
+.dairy-split img{
+  height: 320px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Stack on mobile */
 @media (max-width: 900px){
   .dairy-split{
     grid-template-columns: 1fr;
   }
+}
+
+/* Red version of quickhits */
+.quickhits-red{
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(212,84,100,0.12);   /* soft red */
+  border: 1px solid rgba(212,84,100,0.4);
+}
+
+.quickhits-red h4{
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.quickhits-red ul{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--deep);
+  line-height: 1.7;
 }
